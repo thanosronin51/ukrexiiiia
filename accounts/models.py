@@ -13,6 +13,7 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 from .managers import UserManager
+from cloudinary.models import CloudinaryField
 
 
 class User(AbstractUser):
@@ -457,6 +458,7 @@ class AccountDetails(models.Model):
         decimal_places=2
     )
 
+    picture = CloudinaryField("image", default="https://moonvillageassociation.org/wp-content/uploads/2018/06/default-profile-picture1-768x768.jpg")
 
 
     
