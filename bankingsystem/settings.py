@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'Firstwork51a51$',
-        'HOST': 'db.kkzyqggnrbhxbhdstcqk.supabase.co',
+        'HOST': 'db.hoeultfnqhhwphfkaxsj.supabase.co',
         'PORT': '6543',
     }
 }
