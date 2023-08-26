@@ -45,8 +45,11 @@ class AccountDetailsForm(forms.ModelForm):
             'account_type',
             'account_currency',
             'occupation',
+            'picture'
         ]
-
+        widgets = {
+            'picture': forms.ClearableFileInput(),
+        }
 
 
     def save(self, commit=True):
